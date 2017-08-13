@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Chess: mainwindow.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Chess
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">mainwindow.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d9/d53/mainwindow_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MAINWINDOW_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MAINWINDOW_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QMainWindow&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QTcpServer&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QTcpSocket&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QPalette&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QColor&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QMessageBox&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d3e/chessboard_8h.html">chessboard.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../dc/df0/namespace_ui.html">   12</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dc/df0/namespace_ui.html">Ui</a> {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/dc6/class_main_window.html">MainWindow</a>;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d9/dc6/class_main_window.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/dc6/class_main_window.html">MainWindow</a> : <span class="keyword">public</span> QMainWindow</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d9/dc6/class_main_window.html">MainWindow</a>(QWidget *parent = 0);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    ~<a class="code" href="../../d9/dc6/class_main_window.html">MainWindow</a>();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span> slots:</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> seeHostWindow();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> seeGuestWindow();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> initServer();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> acceptConnection();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> recvMessage();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> sendMessage(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> connectHost(QString add);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> connectSuccess();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> disConnect();</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> declareWinner(<span class="keywordtype">int</span> t);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> requireReset();</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d9/dc6/class_main_window_a35466a70ed47252a0191168126a352a5.html#a35466a70ed47252a0191168126a352a5">   38</a></span>&#160;    Ui::MainWindow *<a class="code" href="../../d9/dc6/class_main_window_a35466a70ed47252a0191168126a352a5.html#a35466a70ed47252a0191168126a352a5">ui</a>;</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d9/dc6/class_main_window_a15e38a8a7fc8737287a4a182bc824534.html#a15e38a8a7fc8737287a4a182bc824534">   39</a></span>&#160;    QTcpServer *<a class="code" href="../../d9/dc6/class_main_window_a15e38a8a7fc8737287a4a182bc824534.html#a15e38a8a7fc8737287a4a182bc824534">listenSocket</a>;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d9/dc6/class_main_window_a5189009165424634032c2f04a1dc46fe.html#a5189009165424634032c2f04a1dc46fe">   40</a></span>&#160;    QTcpSocket *<a class="code" href="../../d9/dc6/class_main_window_a5189009165424634032c2f04a1dc46fe.html#a5189009165424634032c2f04a1dc46fe">readWriteSocket</a>;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d9/dc6/class_main_window_a2ff9360aec66a22cda39d9b9b12b1a48.html#a2ff9360aec66a22cda39d9b9b12b1a48">   41</a></span>&#160;    <a class="code" href="../../df/dac/classguest_window.html">guestWindow</a> *<a class="code" href="../../d9/dc6/class_main_window_a2ff9360aec66a22cda39d9b9b12b1a48.html#a2ff9360aec66a22cda39d9b9b12b1a48">gw</a>;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d9/dc6/class_main_window_a4bd514a5ac9fb14a666d3e056f7d48ef.html#a4bd514a5ac9fb14a666d3e056f7d48ef">   42</a></span>&#160;    <a class="code" href="../../d2/d00/classhost_window.html">hostWindow</a> *<a class="code" href="../../d9/dc6/class_main_window_a4bd514a5ac9fb14a666d3e056f7d48ef.html#a4bd514a5ac9fb14a666d3e056f7d48ef">hw</a>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> labelUpdate();</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif // MAINWINDOW_H</span></div><div class="ttc" id="class_main_window_a15e38a8a7fc8737287a4a182bc824534_html_a15e38a8a7fc8737287a4a182bc824534"><div class="ttname"><a href="../../d9/dc6/class_main_window_a15e38a8a7fc8737287a4a182bc824534.html#a15e38a8a7fc8737287a4a182bc824534">MainWindow::listenSocket</a></div><div class="ttdeci">QTcpServer * listenSocket</div><div class="ttdef"><b>Definition:</b> mainwindow.h:39</div></div>
+<div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> mainwindow.h:12</div></div>
+<div class="ttc" id="class_main_window_a35466a70ed47252a0191168126a352a5_html_a35466a70ed47252a0191168126a352a5"><div class="ttname"><a href="../../d9/dc6/class_main_window_a35466a70ed47252a0191168126a352a5.html#a35466a70ed47252a0191168126a352a5">MainWindow::ui</a></div><div class="ttdeci">Ui::MainWindow * ui</div><div class="ttdef"><b>Definition:</b> mainwindow.h:38</div></div>
+<div class="ttc" id="classguest_window_html"><div class="ttname"><a href="../../df/dac/classguest_window.html">guestWindow</a></div><div class="ttdef"><b>Definition:</b> guestwindow.h:14</div></div>
+<div class="ttc" id="class_main_window_a4bd514a5ac9fb14a666d3e056f7d48ef_html_a4bd514a5ac9fb14a666d3e056f7d48ef"><div class="ttname"><a href="../../d9/dc6/class_main_window_a4bd514a5ac9fb14a666d3e056f7d48ef.html#a4bd514a5ac9fb14a666d3e056f7d48ef">MainWindow::hw</a></div><div class="ttdeci">hostWindow * hw</div><div class="ttdef"><b>Definition:</b> mainwindow.h:42</div></div>
+<div class="ttc" id="chessboard_8h_html"><div class="ttname"><a href="../../df/d3e/chessboard_8h.html">chessboard.h</a></div></div>
+<div class="ttc" id="class_main_window_a5189009165424634032c2f04a1dc46fe_html_a5189009165424634032c2f04a1dc46fe"><div class="ttname"><a href="../../d9/dc6/class_main_window_a5189009165424634032c2f04a1dc46fe.html#a5189009165424634032c2f04a1dc46fe">MainWindow::readWriteSocket</a></div><div class="ttdeci">QTcpSocket * readWriteSocket</div><div class="ttdef"><b>Definition:</b> mainwindow.h:40</div></div>
+<div class="ttc" id="classhost_window_html"><div class="ttname"><a href="../../d2/d00/classhost_window.html">hostWindow</a></div><div class="ttdef"><b>Definition:</b> hostwindow.h:15</div></div>
+<div class="ttc" id="class_main_window_html"><div class="ttname"><a href="../../d9/dc6/class_main_window.html">MainWindow</a></div><div class="ttdef"><b>Definition:</b> mainwindow.h:16</div></div>
+<div class="ttc" id="class_main_window_a2ff9360aec66a22cda39d9b9b12b1a48_html_a2ff9360aec66a22cda39d9b9b12b1a48"><div class="ttname"><a href="../../d9/dc6/class_main_window_a2ff9360aec66a22cda39d9b9b12b1a48.html#a2ff9360aec66a22cda39d9b9b12b1a48">MainWindow::gw</a></div><div class="ttdeci">guestWindow * gw</div><div class="ttdef"><b>Definition:</b> mainwindow.h:41</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

@@ -1,0 +1,228 @@
+\hypertarget{classchess_board}{}\section{chess\+Board类 参考}
+\label{classchess_board}\index{chess\+Board@{chess\+Board}}
+
+
+{\ttfamily \#include \char`\"{}chessboard.\+h\char`\"{}}
+
+
+
+类 chess\+Board 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{de/d0a/classchess_board__inherit__graph}
+\end{center}
+\end{figure}
+
+
+chess\+Board 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{d5/db3/classchess_board__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 槽}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classchess_board_a3a0e6a43b6ffd6f08a8a3b34fb5f9a5e_a3a0e6a43b6ffd6f08a8a3b34fb5f9a5e}{add\+Chess} (int x, int y)
+\item 
+int \hyperlink{classchess_board_a27433f6de7e03bdcb82a247a75e61ef2_a27433f6de7e03bdcb82a247a75e61ef2}{is\+Sb\+Win} ()
+\item 
+void \hyperlink{classchess_board_a685a53f93b9701359ba5d0bce447fef5_a685a53f93b9701359ba5d0bce447fef5}{reset\+Board} ()
+\item 
+void \hyperlink{classchess_board_aeed35797ed849bf9ac7527a0fb8e13a9_aeed35797ed849bf9ac7527a0fb8e13a9}{search\+For\+Bombs} ()
+\item 
+void \hyperlink{classchess_board_ac154f5bf7454a18b79a79af82aa700e5_ac154f5bf7454a18b79a79af82aa700e5}{stat\+Update} (int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{信号}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classchess_board_ad33413fdd05cdedc6f63b56c3d0d5ced_ad33413fdd05cdedc6f63b56c3d0d5ced}{grid\+Clicked} (int, int)
+\item 
+void \hyperlink{classchess_board_ab05811b7fea74301f9169fe5e4e9b96f_ab05811b7fea74301f9169fe5e4e9b96f}{sb\+Win} (int)
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classchess_board_a3ffc09a4d95deaca0f6744ae25bb4f62_a3ffc09a4d95deaca0f6744ae25bb4f62}{chess\+Board} (Q\+Widget $\ast$parent=0)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classchess_board_a7725e13857e6ddc2b155a9876ed4dea2_a7725e13857e6ddc2b155a9876ed4dea2}{available}
+\item 
+int \hyperlink{classchess_board_aedf4d34b20da347daf67987a1894062c_aedf4d34b20da347daf67987a1894062c}{current\+Player}
+\item 
+int \hyperlink{classchess_board_ade0d99898f63b66db3fa79d06c9bc350_ade0d99898f63b66db3fa79d06c9bc350}{expected\+Player}
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classchess_board_a234e4616abf11faa8dbc761eb21a6da7_a234e4616abf11faa8dbc761eb21a6da7}{mouse\+Press\+Event} (Q\+Mouse\+Event $\ast$ev)
+\item 
+void \hyperlink{classchess_board_aa7f58165ccd9b233e091e79b60c4bf38_aa7f58165ccd9b233e091e79b60c4bf38}{paint\+Event} (Q\+Paint\+Event $\ast$ev)
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classchess_board_aa8c4b6997ffcdb121db319a1044f9658_aa8c4b6997ffcdb121db319a1044f9658}{how\+Many\+Bombs} ()
+\item 
+bool \hyperlink{classchess_board_ad0989442267fe68010ea2a289ec96344_ad0989442267fe68010ea2a289ec96344}{is\+Valid} (int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classchess_board_a6453bf0ce62eed140d37b294f3a4a8e8_a6453bf0ce62eed140d37b294f3a4a8e8}{bomb} \mbox{[}20\mbox{]}\mbox{[}20\mbox{]}
+\item 
+int \hyperlink{classchess_board_ac58f8fcb6344bb304616e95fd4773b5c_ac58f8fcb6344bb304616e95fd4773b5c}{dx} \mbox{[}8\mbox{]}
+\item 
+int \hyperlink{classchess_board_ac3fc44ec8c748e37f1e92dda4be8c03a_ac3fc44ec8c748e37f1e92dda4be8c03a}{dy} \mbox{[}8\mbox{]}
+\item 
+int \hyperlink{classchess_board_ad191786c9f76831e99699b315b24b1a5_ad191786c9f76831e99699b315b24b1a5}{line} \mbox{[}20\mbox{]}\mbox{[}20\mbox{]}\mbox{[}8\mbox{]}
+\item 
+int \hyperlink{classchess_board_aa871a25deb0dc97adcf79da0ce150467_aa871a25deb0dc97adcf79da0ce150467}{line\+Gap}
+\item 
+int \hyperlink{classchess_board_a86e2369dc84aac0e8c2ff5dfe395c9fa_a86e2369dc84aac0e8c2ff5dfe395c9fa}{margin}
+\item 
+int \hyperlink{classchess_board_a6ce69698dd39a950ccb031851296e9f7_a6ce69698dd39a950ccb031851296e9f7}{space} \mbox{[}20\mbox{]}\mbox{[}20\mbox{]}\mbox{[}8\mbox{]}
+\item 
+int \hyperlink{classchess_board_a606a859d2b32d470d04b0115ececc200_a606a859d2b32d470d04b0115ececc200}{used} \mbox{[}20\mbox{]}\mbox{[}20\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{构造及析构函数说明}
+\index{chess\+Board@{chess\+Board}!chess\+Board@{chess\+Board}}
+\index{chess\+Board@{chess\+Board}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{chess\+Board(\+Q\+Widget $\ast$parent=0)}{chessBoard(QWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}chess\+Board\+::chess\+Board (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classchess_board_a3ffc09a4d95deaca0f6744ae25bb4f62_a3ffc09a4d95deaca0f6744ae25bb4f62}{}\label{classchess_board_a3ffc09a4d95deaca0f6744ae25bb4f62_a3ffc09a4d95deaca0f6744ae25bb4f62}
+
+
+\subsection{成员函数说明}
+\index{chess\+Board@{chess\+Board}!add\+Chess@{add\+Chess}}
+\index{add\+Chess@{add\+Chess}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{add\+Chess}{addChess}}]{\setlength{\rightskip}{0pt plus 5cm}void chess\+Board\+::add\+Chess (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{classchess_board_a3a0e6a43b6ffd6f08a8a3b34fb5f9a5e_a3a0e6a43b6ffd6f08a8a3b34fb5f9a5e}{}\label{classchess_board_a3a0e6a43b6ffd6f08a8a3b34fb5f9a5e_a3a0e6a43b6ffd6f08a8a3b34fb5f9a5e}
+\index{chess\+Board@{chess\+Board}!grid\+Clicked@{grid\+Clicked}}
+\index{grid\+Clicked@{grid\+Clicked}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{grid\+Clicked}{gridClicked}}]{\setlength{\rightskip}{0pt plus 5cm}void chess\+Board\+::grid\+Clicked (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\hypertarget{classchess_board_ad33413fdd05cdedc6f63b56c3d0d5ced_ad33413fdd05cdedc6f63b56c3d0d5ced}{}\label{classchess_board_ad33413fdd05cdedc6f63b56c3d0d5ced_ad33413fdd05cdedc6f63b56c3d0d5ced}
+\index{chess\+Board@{chess\+Board}!how\+Many\+Bombs@{how\+Many\+Bombs}}
+\index{how\+Many\+Bombs@{how\+Many\+Bombs}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{how\+Many\+Bombs()}{howManyBombs()}}]{\setlength{\rightskip}{0pt plus 5cm}int chess\+Board\+::how\+Many\+Bombs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classchess_board_aa8c4b6997ffcdb121db319a1044f9658_aa8c4b6997ffcdb121db319a1044f9658}{}\label{classchess_board_aa8c4b6997ffcdb121db319a1044f9658_aa8c4b6997ffcdb121db319a1044f9658}
+\index{chess\+Board@{chess\+Board}!is\+Sb\+Win@{is\+Sb\+Win}}
+\index{is\+Sb\+Win@{is\+Sb\+Win}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{is\+Sb\+Win}{isSbWin}}]{\setlength{\rightskip}{0pt plus 5cm}int chess\+Board\+::is\+Sb\+Win (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{classchess_board_a27433f6de7e03bdcb82a247a75e61ef2_a27433f6de7e03bdcb82a247a75e61ef2}{}\label{classchess_board_a27433f6de7e03bdcb82a247a75e61ef2_a27433f6de7e03bdcb82a247a75e61ef2}
+\index{chess\+Board@{chess\+Board}!is\+Valid@{is\+Valid}}
+\index{is\+Valid@{is\+Valid}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{is\+Valid(int x, int y)}{isValid(int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}bool chess\+Board\+::is\+Valid (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classchess_board_ad0989442267fe68010ea2a289ec96344_ad0989442267fe68010ea2a289ec96344}{}\label{classchess_board_ad0989442267fe68010ea2a289ec96344_ad0989442267fe68010ea2a289ec96344}
+\index{chess\+Board@{chess\+Board}!mouse\+Press\+Event@{mouse\+Press\+Event}}
+\index{mouse\+Press\+Event@{mouse\+Press\+Event}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{mouse\+Press\+Event(\+Q\+Mouse\+Event $\ast$ev)}{mousePressEvent(QMouseEvent *ev)}}]{\setlength{\rightskip}{0pt plus 5cm}void chess\+Board\+::mouse\+Press\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Mouse\+Event $\ast$}]{ev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classchess_board_a234e4616abf11faa8dbc761eb21a6da7_a234e4616abf11faa8dbc761eb21a6da7}{}\label{classchess_board_a234e4616abf11faa8dbc761eb21a6da7_a234e4616abf11faa8dbc761eb21a6da7}
+\index{chess\+Board@{chess\+Board}!paint\+Event@{paint\+Event}}
+\index{paint\+Event@{paint\+Event}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{paint\+Event(\+Q\+Paint\+Event $\ast$ev)}{paintEvent(QPaintEvent *ev)}}]{\setlength{\rightskip}{0pt plus 5cm}void chess\+Board\+::paint\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Paint\+Event $\ast$}]{ev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classchess_board_aa7f58165ccd9b233e091e79b60c4bf38_aa7f58165ccd9b233e091e79b60c4bf38}{}\label{classchess_board_aa7f58165ccd9b233e091e79b60c4bf38_aa7f58165ccd9b233e091e79b60c4bf38}
+\index{chess\+Board@{chess\+Board}!reset\+Board@{reset\+Board}}
+\index{reset\+Board@{reset\+Board}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{reset\+Board}{resetBoard}}]{\setlength{\rightskip}{0pt plus 5cm}void chess\+Board\+::reset\+Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{classchess_board_a685a53f93b9701359ba5d0bce447fef5_a685a53f93b9701359ba5d0bce447fef5}{}\label{classchess_board_a685a53f93b9701359ba5d0bce447fef5_a685a53f93b9701359ba5d0bce447fef5}
+\index{chess\+Board@{chess\+Board}!sb\+Win@{sb\+Win}}
+\index{sb\+Win@{sb\+Win}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{sb\+Win}{sbWin}}]{\setlength{\rightskip}{0pt plus 5cm}void chess\+Board\+::sb\+Win (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\hypertarget{classchess_board_ab05811b7fea74301f9169fe5e4e9b96f_ab05811b7fea74301f9169fe5e4e9b96f}{}\label{classchess_board_ab05811b7fea74301f9169fe5e4e9b96f_ab05811b7fea74301f9169fe5e4e9b96f}
+\index{chess\+Board@{chess\+Board}!search\+For\+Bombs@{search\+For\+Bombs}}
+\index{search\+For\+Bombs@{search\+For\+Bombs}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{search\+For\+Bombs}{searchForBombs}}]{\setlength{\rightskip}{0pt plus 5cm}void chess\+Board\+::search\+For\+Bombs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{classchess_board_aeed35797ed849bf9ac7527a0fb8e13a9_aeed35797ed849bf9ac7527a0fb8e13a9}{}\label{classchess_board_aeed35797ed849bf9ac7527a0fb8e13a9_aeed35797ed849bf9ac7527a0fb8e13a9}
+\index{chess\+Board@{chess\+Board}!stat\+Update@{stat\+Update}}
+\index{stat\+Update@{stat\+Update}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{stat\+Update}{statUpdate}}]{\setlength{\rightskip}{0pt plus 5cm}void chess\+Board\+::stat\+Update (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{classchess_board_ac154f5bf7454a18b79a79af82aa700e5_ac154f5bf7454a18b79a79af82aa700e5}{}\label{classchess_board_ac154f5bf7454a18b79a79af82aa700e5_ac154f5bf7454a18b79a79af82aa700e5}
+
+
+\subsection{类成员变量说明}
+\index{chess\+Board@{chess\+Board}!available@{available}}
+\index{available@{available}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{available}{available}}]{\setlength{\rightskip}{0pt plus 5cm}bool chess\+Board\+::available}\hypertarget{classchess_board_a7725e13857e6ddc2b155a9876ed4dea2_a7725e13857e6ddc2b155a9876ed4dea2}{}\label{classchess_board_a7725e13857e6ddc2b155a9876ed4dea2_a7725e13857e6ddc2b155a9876ed4dea2}
+\index{chess\+Board@{chess\+Board}!bomb@{bomb}}
+\index{bomb@{bomb}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{bomb}{bomb}}]{\setlength{\rightskip}{0pt plus 5cm}bool chess\+Board\+::bomb\mbox{[}20\mbox{]}\mbox{[}20\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classchess_board_a6453bf0ce62eed140d37b294f3a4a8e8_a6453bf0ce62eed140d37b294f3a4a8e8}{}\label{classchess_board_a6453bf0ce62eed140d37b294f3a4a8e8_a6453bf0ce62eed140d37b294f3a4a8e8}
+\index{chess\+Board@{chess\+Board}!current\+Player@{current\+Player}}
+\index{current\+Player@{current\+Player}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{current\+Player}{currentPlayer}}]{\setlength{\rightskip}{0pt plus 5cm}int chess\+Board\+::current\+Player}\hypertarget{classchess_board_aedf4d34b20da347daf67987a1894062c_aedf4d34b20da347daf67987a1894062c}{}\label{classchess_board_aedf4d34b20da347daf67987a1894062c_aedf4d34b20da347daf67987a1894062c}
+\index{chess\+Board@{chess\+Board}!dx@{dx}}
+\index{dx@{dx}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{dx}{dx}}]{\setlength{\rightskip}{0pt plus 5cm}int chess\+Board\+::dx\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classchess_board_ac58f8fcb6344bb304616e95fd4773b5c_ac58f8fcb6344bb304616e95fd4773b5c}{}\label{classchess_board_ac58f8fcb6344bb304616e95fd4773b5c_ac58f8fcb6344bb304616e95fd4773b5c}
+\index{chess\+Board@{chess\+Board}!dy@{dy}}
+\index{dy@{dy}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{dy}{dy}}]{\setlength{\rightskip}{0pt plus 5cm}int chess\+Board\+::dy\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classchess_board_ac3fc44ec8c748e37f1e92dda4be8c03a_ac3fc44ec8c748e37f1e92dda4be8c03a}{}\label{classchess_board_ac3fc44ec8c748e37f1e92dda4be8c03a_ac3fc44ec8c748e37f1e92dda4be8c03a}
+\index{chess\+Board@{chess\+Board}!expected\+Player@{expected\+Player}}
+\index{expected\+Player@{expected\+Player}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{expected\+Player}{expectedPlayer}}]{\setlength{\rightskip}{0pt plus 5cm}int chess\+Board\+::expected\+Player}\hypertarget{classchess_board_ade0d99898f63b66db3fa79d06c9bc350_ade0d99898f63b66db3fa79d06c9bc350}{}\label{classchess_board_ade0d99898f63b66db3fa79d06c9bc350_ade0d99898f63b66db3fa79d06c9bc350}
+\index{chess\+Board@{chess\+Board}!line@{line}}
+\index{line@{line}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{line}{line}}]{\setlength{\rightskip}{0pt plus 5cm}int chess\+Board\+::line\mbox{[}20\mbox{]}\mbox{[}20\mbox{]}\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classchess_board_ad191786c9f76831e99699b315b24b1a5_ad191786c9f76831e99699b315b24b1a5}{}\label{classchess_board_ad191786c9f76831e99699b315b24b1a5_ad191786c9f76831e99699b315b24b1a5}
+\index{chess\+Board@{chess\+Board}!line\+Gap@{line\+Gap}}
+\index{line\+Gap@{line\+Gap}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{line\+Gap}{lineGap}}]{\setlength{\rightskip}{0pt plus 5cm}int chess\+Board\+::line\+Gap\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classchess_board_aa871a25deb0dc97adcf79da0ce150467_aa871a25deb0dc97adcf79da0ce150467}{}\label{classchess_board_aa871a25deb0dc97adcf79da0ce150467_aa871a25deb0dc97adcf79da0ce150467}
+\index{chess\+Board@{chess\+Board}!margin@{margin}}
+\index{margin@{margin}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{margin}{margin}}]{\setlength{\rightskip}{0pt plus 5cm}int chess\+Board\+::margin\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classchess_board_a86e2369dc84aac0e8c2ff5dfe395c9fa_a86e2369dc84aac0e8c2ff5dfe395c9fa}{}\label{classchess_board_a86e2369dc84aac0e8c2ff5dfe395c9fa_a86e2369dc84aac0e8c2ff5dfe395c9fa}
+\index{chess\+Board@{chess\+Board}!space@{space}}
+\index{space@{space}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{space}{space}}]{\setlength{\rightskip}{0pt plus 5cm}int chess\+Board\+::space\mbox{[}20\mbox{]}\mbox{[}20\mbox{]}\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classchess_board_a6ce69698dd39a950ccb031851296e9f7_a6ce69698dd39a950ccb031851296e9f7}{}\label{classchess_board_a6ce69698dd39a950ccb031851296e9f7_a6ce69698dd39a950ccb031851296e9f7}
+\index{chess\+Board@{chess\+Board}!used@{used}}
+\index{used@{used}!chess\+Board@{chess\+Board}}
+\subsubsection[{\texorpdfstring{used}{used}}]{\setlength{\rightskip}{0pt plus 5cm}int chess\+Board\+::used\mbox{[}20\mbox{]}\mbox{[}20\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classchess_board_a606a859d2b32d470d04b0115ececc200_a606a859d2b32d470d04b0115ececc200}{}\label{classchess_board_a606a859d2b32d470d04b0115ececc200_a606a859d2b32d470d04b0115ececc200}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{chessboard_8h}{chessboard.\+h}\end{DoxyCompactItemize}

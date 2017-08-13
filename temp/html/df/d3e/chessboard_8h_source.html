@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Chess: chessboard.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Chess
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">chessboard.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../df/d3e/chessboard_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CHESSBOARD_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CHESSBOARD_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QWidget&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QList&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QPalette&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QMouseEvent&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d90/hostwindow_8h.html">hostwindow.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/d92/guestwindow_8h.html">guestwindow.h</a>&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;string.h&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;memory.h&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/dc8/chessdata_8h.html">chessdata.h</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d9/dbc/classchess_board.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/dbc/classchess_board.html">chessBoard</a> : <span class="keyword">public</span> QWidget</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d9/dbc/classchess_board_a3ffc09a4d95deaca0f6744ae25bb4f62.html#a3ffc09a4d95deaca0f6744ae25bb4f62">chessBoard</a>(QWidget *parent = 0);</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d9/dbc/classchess_board_ade0d99898f63b66db3fa79d06c9bc350.html#ade0d99898f63b66db3fa79d06c9bc350">   21</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d9/dbc/classchess_board_aedf4d34b20da347daf67987a1894062c.html#aedf4d34b20da347daf67987a1894062c">currentPlayer</a>,<a class="code" href="../../d9/dbc/classchess_board_ade0d99898f63b66db3fa79d06c9bc350.html#ade0d99898f63b66db3fa79d06c9bc350">expectedPlayer</a>;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../d9/dbc/classchess_board_a7725e13857e6ddc2b155a9876ed4dea2.html#a7725e13857e6ddc2b155a9876ed4dea2">   22</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d9/dbc/classchess_board_a7725e13857e6ddc2b155a9876ed4dea2.html#a7725e13857e6ddc2b155a9876ed4dea2">available</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/dbc/classchess_board_aa7f58165ccd9b233e091e79b60c4bf38.html#aa7f58165ccd9b233e091e79b60c4bf38">paintEvent</a>(QPaintEvent *ev);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/dbc/classchess_board_a234e4616abf11faa8dbc761eb21a6da7.html#a234e4616abf11faa8dbc761eb21a6da7">mousePressEvent</a>(QMouseEvent *ev);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;signals:</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/dbc/classchess_board_ad33413fdd05cdedc6f63b56c3d0d5ced.html#ad33413fdd05cdedc6f63b56c3d0d5ced">gridClicked</a>(<span class="keywordtype">int</span>,<span class="keywordtype">int</span>);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/dbc/classchess_board_ab05811b7fea74301f9169fe5e4e9b96f.html#ab05811b7fea74301f9169fe5e4e9b96f">sbWin</a>(<span class="keywordtype">int</span>);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span> slots:</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/dbc/classchess_board_a3a0e6a43b6ffd6f08a8a3b34fb5f9a5e.html#a3a0e6a43b6ffd6f08a8a3b34fb5f9a5e">addChess</a>(<span class="keywordtype">int</span> x,<span class="keywordtype">int</span> y);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/dbc/classchess_board_a685a53f93b9701359ba5d0bce447fef5.html#a685a53f93b9701359ba5d0bce447fef5">resetBoard</a>();</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/dbc/classchess_board_ac154f5bf7454a18b79a79af82aa700e5.html#ac154f5bf7454a18b79a79af82aa700e5">statUpdate</a>(<span class="keywordtype">int</span> x,<span class="keywordtype">int</span> y);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d9/dbc/classchess_board_a27433f6de7e03bdcb82a247a75e61ef2.html#a27433f6de7e03bdcb82a247a75e61ef2">isSbWin</a>();</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/dbc/classchess_board_aeed35797ed849bf9ac7527a0fb8e13a9.html#aeed35797ed849bf9ac7527a0fb8e13a9">searchForBombs</a>();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d9/dbc/classchess_board_a6ce69698dd39a950ccb031851296e9f7.html#a6ce69698dd39a950ccb031851296e9f7">   40</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d9/dbc/classchess_board_ad191786c9f76831e99699b315b24b1a5.html#ad191786c9f76831e99699b315b24b1a5">line</a>[20][20][8],<a class="code" href="../../d9/dbc/classchess_board_a6ce69698dd39a950ccb031851296e9f7.html#a6ce69698dd39a950ccb031851296e9f7">space</a>[20][20][8];</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d9/dbc/classchess_board_a606a859d2b32d470d04b0115ececc200.html#a606a859d2b32d470d04b0115ececc200">   41</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d9/dbc/classchess_board_a606a859d2b32d470d04b0115ececc200.html#a606a859d2b32d470d04b0115ececc200">used</a>[20][20];</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d9/dbc/classchess_board_a6453bf0ce62eed140d37b294f3a4a8e8.html#a6453bf0ce62eed140d37b294f3a4a8e8">   42</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d9/dbc/classchess_board_a6453bf0ce62eed140d37b294f3a4a8e8.html#a6453bf0ce62eed140d37b294f3a4a8e8">bomb</a>[20][20];</div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d9/dbc/classchess_board_a86e2369dc84aac0e8c2ff5dfe395c9fa.html#a86e2369dc84aac0e8c2ff5dfe395c9fa">   43</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d9/dbc/classchess_board_aa871a25deb0dc97adcf79da0ce150467.html#aa871a25deb0dc97adcf79da0ce150467">lineGap</a>,<a class="code" href="../../d9/dbc/classchess_board_a86e2369dc84aac0e8c2ff5dfe395c9fa.html#a86e2369dc84aac0e8c2ff5dfe395c9fa">margin</a>;</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../d9/dbc/classchess_board_ac3fc44ec8c748e37f1e92dda4be8c03a.html#ac3fc44ec8c748e37f1e92dda4be8c03a">   44</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d9/dbc/classchess_board_ac58f8fcb6344bb304616e95fd4773b5c.html#ac58f8fcb6344bb304616e95fd4773b5c">dx</a>[8],<a class="code" href="../../d9/dbc/classchess_board_ac3fc44ec8c748e37f1e92dda4be8c03a.html#ac3fc44ec8c748e37f1e92dda4be8c03a">dy</a>[8];</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d9/dbc/classchess_board_ad0989442267fe68010ea2a289ec96344.html#ad0989442267fe68010ea2a289ec96344">isValid</a>(<span class="keywordtype">int</span> x,<span class="keywordtype">int</span> y);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d9/dbc/classchess_board_aa8c4b6997ffcdb121db319a1044f9658.html#aa8c4b6997ffcdb121db319a1044f9658">howManyBombs</a>();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif // CHESSBOARD_H</span></div><div class="ttc" id="classchess_board_a27433f6de7e03bdcb82a247a75e61ef2_html_a27433f6de7e03bdcb82a247a75e61ef2"><div class="ttname"><a href="../../d9/dbc/classchess_board_a27433f6de7e03bdcb82a247a75e61ef2.html#a27433f6de7e03bdcb82a247a75e61ef2">chessBoard::isSbWin</a></div><div class="ttdeci">int isSbWin()</div></div>
+<div class="ttc" id="classchess_board_a234e4616abf11faa8dbc761eb21a6da7_html_a234e4616abf11faa8dbc761eb21a6da7"><div class="ttname"><a href="../../d9/dbc/classchess_board_a234e4616abf11faa8dbc761eb21a6da7.html#a234e4616abf11faa8dbc761eb21a6da7">chessBoard::mousePressEvent</a></div><div class="ttdeci">void mousePressEvent(QMouseEvent *ev)</div></div>
+<div class="ttc" id="classchess_board_a685a53f93b9701359ba5d0bce447fef5_html_a685a53f93b9701359ba5d0bce447fef5"><div class="ttname"><a href="../../d9/dbc/classchess_board_a685a53f93b9701359ba5d0bce447fef5.html#a685a53f93b9701359ba5d0bce447fef5">chessBoard::resetBoard</a></div><div class="ttdeci">void resetBoard()</div></div>
+<div class="ttc" id="classchess_board_ac58f8fcb6344bb304616e95fd4773b5c_html_ac58f8fcb6344bb304616e95fd4773b5c"><div class="ttname"><a href="../../d9/dbc/classchess_board_ac58f8fcb6344bb304616e95fd4773b5c.html#ac58f8fcb6344bb304616e95fd4773b5c">chessBoard::dx</a></div><div class="ttdeci">int dx[8]</div><div class="ttdef"><b>Definition:</b> chessboard.h:44</div></div>
+<div class="ttc" id="classchess_board_ad191786c9f76831e99699b315b24b1a5_html_ad191786c9f76831e99699b315b24b1a5"><div class="ttname"><a href="../../d9/dbc/classchess_board_ad191786c9f76831e99699b315b24b1a5.html#ad191786c9f76831e99699b315b24b1a5">chessBoard::line</a></div><div class="ttdeci">int line[20][20][8]</div><div class="ttdef"><b>Definition:</b> chessboard.h:40</div></div>
+<div class="ttc" id="classchess_board_a3a0e6a43b6ffd6f08a8a3b34fb5f9a5e_html_a3a0e6a43b6ffd6f08a8a3b34fb5f9a5e"><div class="ttname"><a href="../../d9/dbc/classchess_board_a3a0e6a43b6ffd6f08a8a3b34fb5f9a5e.html#a3a0e6a43b6ffd6f08a8a3b34fb5f9a5e">chessBoard::addChess</a></div><div class="ttdeci">void addChess(int x, int y)</div></div>
+<div class="ttc" id="classchess_board_aa871a25deb0dc97adcf79da0ce150467_html_aa871a25deb0dc97adcf79da0ce150467"><div class="ttname"><a href="../../d9/dbc/classchess_board_aa871a25deb0dc97adcf79da0ce150467.html#aa871a25deb0dc97adcf79da0ce150467">chessBoard::lineGap</a></div><div class="ttdeci">int lineGap</div><div class="ttdef"><b>Definition:</b> chessboard.h:43</div></div>
+<div class="ttc" id="chessdata_8h_html"><div class="ttname"><a href="../../da/dc8/chessdata_8h.html">chessdata.h</a></div></div>
+<div class="ttc" id="classchess_board_a3ffc09a4d95deaca0f6744ae25bb4f62_html_a3ffc09a4d95deaca0f6744ae25bb4f62"><div class="ttname"><a href="../../d9/dbc/classchess_board_a3ffc09a4d95deaca0f6744ae25bb4f62.html#a3ffc09a4d95deaca0f6744ae25bb4f62">chessBoard::chessBoard</a></div><div class="ttdeci">chessBoard(QWidget *parent=0)</div></div>
+<div class="ttc" id="classchess_board_html"><div class="ttname"><a href="../../d9/dbc/classchess_board.html">chessBoard</a></div><div class="ttdef"><b>Definition:</b> chessboard.h:16</div></div>
+<div class="ttc" id="classchess_board_a606a859d2b32d470d04b0115ececc200_html_a606a859d2b32d470d04b0115ececc200"><div class="ttname"><a href="../../d9/dbc/classchess_board_a606a859d2b32d470d04b0115ececc200.html#a606a859d2b32d470d04b0115ececc200">chessBoard::used</a></div><div class="ttdeci">int used[20][20]</div><div class="ttdef"><b>Definition:</b> chessboard.h:41</div></div>
+<div class="ttc" id="classchess_board_aa8c4b6997ffcdb121db319a1044f9658_html_aa8c4b6997ffcdb121db319a1044f9658"><div class="ttname"><a href="../../d9/dbc/classchess_board_aa8c4b6997ffcdb121db319a1044f9658.html#aa8c4b6997ffcdb121db319a1044f9658">chessBoard::howManyBombs</a></div><div class="ttdeci">int howManyBombs()</div></div>
+<div class="ttc" id="guestwindow_8h_html"><div class="ttname"><a href="../../da/d92/guestwindow_8h.html">guestwindow.h</a></div></div>
+<div class="ttc" id="classchess_board_a6453bf0ce62eed140d37b294f3a4a8e8_html_a6453bf0ce62eed140d37b294f3a4a8e8"><div class="ttname"><a href="../../d9/dbc/classchess_board_a6453bf0ce62eed140d37b294f3a4a8e8.html#a6453bf0ce62eed140d37b294f3a4a8e8">chessBoard::bomb</a></div><div class="ttdeci">bool bomb[20][20]</div><div class="ttdef"><b>Definition:</b> chessboard.h:42</div></div>
+<div class="ttc" id="hostwindow_8h_html"><div class="ttname"><a href="../../d9/d90/hostwindow_8h.html">hostwindow.h</a></div></div>
+<div class="ttc" id="classchess_board_aedf4d34b20da347daf67987a1894062c_html_aedf4d34b20da347daf67987a1894062c"><div class="ttname"><a href="../../d9/dbc/classchess_board_aedf4d34b20da347daf67987a1894062c.html#aedf4d34b20da347daf67987a1894062c">chessBoard::currentPlayer</a></div><div class="ttdeci">int currentPlayer</div><div class="ttdef"><b>Definition:</b> chessboard.h:21</div></div>
+<div class="ttc" id="classchess_board_ade0d99898f63b66db3fa79d06c9bc350_html_ade0d99898f63b66db3fa79d06c9bc350"><div class="ttname"><a href="../../d9/dbc/classchess_board_ade0d99898f63b66db3fa79d06c9bc350.html#ade0d99898f63b66db3fa79d06c9bc350">chessBoard::expectedPlayer</a></div><div class="ttdeci">int expectedPlayer</div><div class="ttdef"><b>Definition:</b> chessboard.h:21</div></div>
+<div class="ttc" id="classchess_board_a86e2369dc84aac0e8c2ff5dfe395c9fa_html_a86e2369dc84aac0e8c2ff5dfe395c9fa"><div class="ttname"><a href="../../d9/dbc/classchess_board_a86e2369dc84aac0e8c2ff5dfe395c9fa.html#a86e2369dc84aac0e8c2ff5dfe395c9fa">chessBoard::margin</a></div><div class="ttdeci">int margin</div><div class="ttdef"><b>Definition:</b> chessboard.h:43</div></div>
+<div class="ttc" id="classchess_board_ac154f5bf7454a18b79a79af82aa700e5_html_ac154f5bf7454a18b79a79af82aa700e5"><div class="ttname"><a href="../../d9/dbc/classchess_board_ac154f5bf7454a18b79a79af82aa700e5.html#ac154f5bf7454a18b79a79af82aa700e5">chessBoard::statUpdate</a></div><div class="ttdeci">void statUpdate(int x, int y)</div></div>
+<div class="ttc" id="classchess_board_ac3fc44ec8c748e37f1e92dda4be8c03a_html_ac3fc44ec8c748e37f1e92dda4be8c03a"><div class="ttname"><a href="../../d9/dbc/classchess_board_ac3fc44ec8c748e37f1e92dda4be8c03a.html#ac3fc44ec8c748e37f1e92dda4be8c03a">chessBoard::dy</a></div><div class="ttdeci">int dy[8]</div><div class="ttdef"><b>Definition:</b> chessboard.h:44</div></div>
+<div class="ttc" id="classchess_board_aa7f58165ccd9b233e091e79b60c4bf38_html_aa7f58165ccd9b233e091e79b60c4bf38"><div class="ttname"><a href="../../d9/dbc/classchess_board_aa7f58165ccd9b233e091e79b60c4bf38.html#aa7f58165ccd9b233e091e79b60c4bf38">chessBoard::paintEvent</a></div><div class="ttdeci">void paintEvent(QPaintEvent *ev)</div></div>
+<div class="ttc" id="classchess_board_ab05811b7fea74301f9169fe5e4e9b96f_html_ab05811b7fea74301f9169fe5e4e9b96f"><div class="ttname"><a href="../../d9/dbc/classchess_board_ab05811b7fea74301f9169fe5e4e9b96f.html#ab05811b7fea74301f9169fe5e4e9b96f">chessBoard::sbWin</a></div><div class="ttdeci">void sbWin(int)</div></div>
+<div class="ttc" id="classchess_board_a6ce69698dd39a950ccb031851296e9f7_html_a6ce69698dd39a950ccb031851296e9f7"><div class="ttname"><a href="../../d9/dbc/classchess_board_a6ce69698dd39a950ccb031851296e9f7.html#a6ce69698dd39a950ccb031851296e9f7">chessBoard::space</a></div><div class="ttdeci">int space[20][20][8]</div><div class="ttdef"><b>Definition:</b> chessboard.h:40</div></div>
+<div class="ttc" id="classchess_board_ad33413fdd05cdedc6f63b56c3d0d5ced_html_ad33413fdd05cdedc6f63b56c3d0d5ced"><div class="ttname"><a href="../../d9/dbc/classchess_board_ad33413fdd05cdedc6f63b56c3d0d5ced.html#ad33413fdd05cdedc6f63b56c3d0d5ced">chessBoard::gridClicked</a></div><div class="ttdeci">void gridClicked(int, int)</div></div>
+<div class="ttc" id="classchess_board_aeed35797ed849bf9ac7527a0fb8e13a9_html_aeed35797ed849bf9ac7527a0fb8e13a9"><div class="ttname"><a href="../../d9/dbc/classchess_board_aeed35797ed849bf9ac7527a0fb8e13a9.html#aeed35797ed849bf9ac7527a0fb8e13a9">chessBoard::searchForBombs</a></div><div class="ttdeci">void searchForBombs()</div></div>
+<div class="ttc" id="classchess_board_ad0989442267fe68010ea2a289ec96344_html_ad0989442267fe68010ea2a289ec96344"><div class="ttname"><a href="../../d9/dbc/classchess_board_ad0989442267fe68010ea2a289ec96344.html#ad0989442267fe68010ea2a289ec96344">chessBoard::isValid</a></div><div class="ttdeci">bool isValid(int x, int y)</div></div>
+<div class="ttc" id="classchess_board_a7725e13857e6ddc2b155a9876ed4dea2_html_a7725e13857e6ddc2b155a9876ed4dea2"><div class="ttname"><a href="../../d9/dbc/classchess_board_a7725e13857e6ddc2b155a9876ed4dea2.html#a7725e13857e6ddc2b155a9876ed4dea2">chessBoard::available</a></div><div class="ttdeci">bool available</div><div class="ttdef"><b>Definition:</b> chessboard.h:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

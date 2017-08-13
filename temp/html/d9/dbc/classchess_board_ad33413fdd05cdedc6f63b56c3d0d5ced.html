@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Chess: chessBoard::gridClicked</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Chess
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d9/dbc/classchess_board.html">chessBoard</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="contents">
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+   <td valign="top">
+      <div class="navtab">
+        <table>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_a3a0e6a43b6ffd6f08a8a3b34fb5f9a5e.html#a3a0e6a43b6ffd6f08a8a3b34fb5f9a5e">addChess</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_a7725e13857e6ddc2b155a9876ed4dea2.html#a7725e13857e6ddc2b155a9876ed4dea2">available</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_a6453bf0ce62eed140d37b294f3a4a8e8.html#a6453bf0ce62eed140d37b294f3a4a8e8">bomb</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_a3ffc09a4d95deaca0f6744ae25bb4f62.html#a3ffc09a4d95deaca0f6744ae25bb4f62">chessBoard</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_aedf4d34b20da347daf67987a1894062c.html#aedf4d34b20da347daf67987a1894062c">currentPlayer</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_ac58f8fcb6344bb304616e95fd4773b5c.html#ac58f8fcb6344bb304616e95fd4773b5c">dx</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_ac3fc44ec8c748e37f1e92dda4be8c03a.html#ac3fc44ec8c748e37f1e92dda4be8c03a">dy</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_ade0d99898f63b66db3fa79d06c9bc350.html#ade0d99898f63b66db3fa79d06c9bc350">expectedPlayer</a></td></tr>
+          <tr><td class="navtab"><a class="qindexHL" href="../../d9/dbc/classchess_board_ad33413fdd05cdedc6f63b56c3d0d5ced.html#ad33413fdd05cdedc6f63b56c3d0d5ced">gridClicked</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_aa8c4b6997ffcdb121db319a1044f9658.html#aa8c4b6997ffcdb121db319a1044f9658">howManyBombs</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_a27433f6de7e03bdcb82a247a75e61ef2.html#a27433f6de7e03bdcb82a247a75e61ef2">isSbWin</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_ad0989442267fe68010ea2a289ec96344.html#ad0989442267fe68010ea2a289ec96344">isValid</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_ad191786c9f76831e99699b315b24b1a5.html#ad191786c9f76831e99699b315b24b1a5">line</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_aa871a25deb0dc97adcf79da0ce150467.html#aa871a25deb0dc97adcf79da0ce150467">lineGap</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_a86e2369dc84aac0e8c2ff5dfe395c9fa.html#a86e2369dc84aac0e8c2ff5dfe395c9fa">margin</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_a234e4616abf11faa8dbc761eb21a6da7.html#a234e4616abf11faa8dbc761eb21a6da7">mousePressEvent</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_aa7f58165ccd9b233e091e79b60c4bf38.html#aa7f58165ccd9b233e091e79b60c4bf38">paintEvent</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_a685a53f93b9701359ba5d0bce447fef5.html#a685a53f93b9701359ba5d0bce447fef5">resetBoard</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_ab05811b7fea74301f9169fe5e4e9b96f.html#ab05811b7fea74301f9169fe5e4e9b96f">sbWin</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_aeed35797ed849bf9ac7527a0fb8e13a9.html#aeed35797ed849bf9ac7527a0fb8e13a9">searchForBombs</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_a6ce69698dd39a950ccb031851296e9f7.html#a6ce69698dd39a950ccb031851296e9f7">space</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_ac154f5bf7454a18b79a79af82aa700e5.html#ac154f5bf7454a18b79a79af82aa700e5">statUpdate</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d9/dbc/classchess_board_a606a859d2b32d470d04b0115ececc200.html#a606a859d2b32d470d04b0115ececc200">used</a></td></tr>
+        </table>
+      </div>
+   </td>
+   <td valign="top" class="mempage">
+<a class="anchor" id="ad33413fdd05cdedc6f63b56c3d0d5ced"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chessBoard::gridClicked </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+    </td>
+  </tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

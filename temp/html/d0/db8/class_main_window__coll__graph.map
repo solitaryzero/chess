@@ -1,0 +1,4 @@
+<map id="MainWindow" name="MainWindow">
+<area shape="rect" id="node3" href="$d2/d00/classhost_window.html" title="{hostWindow\n|&#45; cancelButton\l&#45; hostIP\l&#45; hostLayout\l&#45; label\l&#45; okButton\l|+ hostWindow()\l&#45; ipSearch()\l}" alt="" coords="137,220,250,371"/>
+<area shape="rect" id="node5" href="$df/dac/classguest_window.html" title="{guestWindow\n|+ ipNumber\l&#45; buttons\l&#45; cancelButton\l&#45; decisionLayout\l&#45; delButton\l&#45; dotButton\l&#45; ipBoard\l&#45; label\l&#45; mapper\l&#45; numberLayout\l&#45; okButton\l&#45; outerLayout\l&#45; resetButton\l&#45; showerLayout\l|+ guestWindow()\l&#45; accept()\l&#45; addNumber()\l&#45; deleteIP()\l&#45; resetIP()\l}" alt="" coords="275,132,395,459"/>
+</map>

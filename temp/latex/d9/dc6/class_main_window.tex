@@ -1,0 +1,204 @@
+\hypertarget{class_main_window}{}\section{Main\+Window类 参考}
+\label{class_main_window}\index{Main\+Window@{Main\+Window}}
+
+
+{\ttfamily \#include \char`\"{}mainwindow.\+h\char`\"{}}
+
+
+
+类 Main\+Window 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{de/d4b/class_main_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Main\+Window 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/db8/class_main_window__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 槽}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_ac24d6fd52a86d2f51570b4533faa5785_ac24d6fd52a86d2f51570b4533faa5785}{accept\+Connection} ()
+\item 
+void \hyperlink{class_main_window_a34b9342e6faff00c7d5c4c1ddfde6758_a34b9342e6faff00c7d5c4c1ddfde6758}{connect\+Host} (Q\+String add)
+\item 
+void \hyperlink{class_main_window_a818e9bdc274af691c4ebdbd255ede285_a818e9bdc274af691c4ebdbd255ede285}{connect\+Success} ()
+\item 
+void \hyperlink{class_main_window_abc7cfc8fb5680e5b2447d903174590ae_abc7cfc8fb5680e5b2447d903174590ae}{declare\+Winner} (int t)
+\item 
+void \hyperlink{class_main_window_a7ea49bac0b7604a1a4ba0dabb79b3439_a7ea49bac0b7604a1a4ba0dabb79b3439}{dis\+Connect} ()
+\item 
+void \hyperlink{class_main_window_a9343e215240dbbabcc2a9f83b1a53807_a9343e215240dbbabcc2a9f83b1a53807}{init\+Server} ()
+\item 
+void \hyperlink{class_main_window_a76637688e60dce665f72f661e1894412_a76637688e60dce665f72f661e1894412}{recv\+Message} ()
+\item 
+void \hyperlink{class_main_window_a939d1ea323f91e4a6e56e72ea3439803_a939d1ea323f91e4a6e56e72ea3439803}{require\+Reset} ()
+\item 
+void \hyperlink{class_main_window_a0b946fa967217fdf44022c00294f03b8_a0b946fa967217fdf44022c00294f03b8}{see\+Guest\+Window} ()
+\item 
+void \hyperlink{class_main_window_af89f09b9a2c59e4903d26b2bd1355052_af89f09b9a2c59e4903d26b2bd1355052}{see\+Host\+Window} ()
+\item 
+void \hyperlink{class_main_window_a6a0abf778996f6f2e3dc0d835d5f66ca_a6a0abf778996f6f2e3dc0d835d5f66ca}{send\+Message} (int i, int j)
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db_a8b244be8b7b7db1b08de2a2acb9409db}{Main\+Window} (Q\+Widget $\ast$parent=0)
+\item 
+\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_a09e3a622889962737a7f842b4f2a9693_a09e3a622889962737a7f842b4f2a9693}{label\+Update} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classguest_window}{guest\+Window} $\ast$ \hyperlink{class_main_window_a2ff9360aec66a22cda39d9b9b12b1a48_a2ff9360aec66a22cda39d9b9b12b1a48}{gw}
+\item 
+\hyperlink{classhost_window}{host\+Window} $\ast$ \hyperlink{class_main_window_a4bd514a5ac9fb14a666d3e056f7d48ef_a4bd514a5ac9fb14a666d3e056f7d48ef}{hw}
+\item 
+Q\+Tcp\+Server $\ast$ \hyperlink{class_main_window_a15e38a8a7fc8737287a4a182bc824534_a15e38a8a7fc8737287a4a182bc824534}{listen\+Socket}
+\item 
+Q\+Tcp\+Socket $\ast$ \hyperlink{class_main_window_a5189009165424634032c2f04a1dc46fe_a5189009165424634032c2f04a1dc46fe}{read\+Write\+Socket}
+\item 
+Ui\+::\+Main\+Window $\ast$ \hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5_a35466a70ed47252a0191168126a352a5}{ui}
+\end{DoxyCompactItemize}
+
+
+\subsection{构造及析构函数说明}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{Main\+Window(\+Q\+Widget $\ast$parent=0)}{MainWindow(QWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Main\+Window\+::\+Main\+Window (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db_a8b244be8b7b7db1b08de2a2acb9409db}{}\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db_a8b244be8b7b7db1b08de2a2acb9409db}
+\index{Main\+Window@{Main\+Window}!````~Main\+Window@{$\sim$\+Main\+Window}}
+\index{````~Main\+Window@{$\sim$\+Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{$\sim$\+Main\+Window()}{~MainWindow()}}]{\setlength{\rightskip}{0pt plus 5cm}Main\+Window\+::$\sim$\+Main\+Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7_ae98d00a93bc118200eeef9f9bba1dba7}{}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7_ae98d00a93bc118200eeef9f9bba1dba7}
+
+
+\subsection{成员函数说明}
+\index{Main\+Window@{Main\+Window}!accept\+Connection@{accept\+Connection}}
+\index{accept\+Connection@{accept\+Connection}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{accept\+Connection}{acceptConnection}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::accept\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_main_window_ac24d6fd52a86d2f51570b4533faa5785_ac24d6fd52a86d2f51570b4533faa5785}{}\label{class_main_window_ac24d6fd52a86d2f51570b4533faa5785_ac24d6fd52a86d2f51570b4533faa5785}
+\index{Main\+Window@{Main\+Window}!connect\+Host@{connect\+Host}}
+\index{connect\+Host@{connect\+Host}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{connect\+Host}{connectHost}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::connect\+Host (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{add}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_main_window_a34b9342e6faff00c7d5c4c1ddfde6758_a34b9342e6faff00c7d5c4c1ddfde6758}{}\label{class_main_window_a34b9342e6faff00c7d5c4c1ddfde6758_a34b9342e6faff00c7d5c4c1ddfde6758}
+\index{Main\+Window@{Main\+Window}!connect\+Success@{connect\+Success}}
+\index{connect\+Success@{connect\+Success}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{connect\+Success}{connectSuccess}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::connect\+Success (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_main_window_a818e9bdc274af691c4ebdbd255ede285_a818e9bdc274af691c4ebdbd255ede285}{}\label{class_main_window_a818e9bdc274af691c4ebdbd255ede285_a818e9bdc274af691c4ebdbd255ede285}
+\index{Main\+Window@{Main\+Window}!declare\+Winner@{declare\+Winner}}
+\index{declare\+Winner@{declare\+Winner}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{declare\+Winner}{declareWinner}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::declare\+Winner (
+\begin{DoxyParamCaption}
+\item[{int}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_main_window_abc7cfc8fb5680e5b2447d903174590ae_abc7cfc8fb5680e5b2447d903174590ae}{}\label{class_main_window_abc7cfc8fb5680e5b2447d903174590ae_abc7cfc8fb5680e5b2447d903174590ae}
+\index{Main\+Window@{Main\+Window}!dis\+Connect@{dis\+Connect}}
+\index{dis\+Connect@{dis\+Connect}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{dis\+Connect}{disConnect}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::dis\+Connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_main_window_a7ea49bac0b7604a1a4ba0dabb79b3439_a7ea49bac0b7604a1a4ba0dabb79b3439}{}\label{class_main_window_a7ea49bac0b7604a1a4ba0dabb79b3439_a7ea49bac0b7604a1a4ba0dabb79b3439}
+\index{Main\+Window@{Main\+Window}!init\+Server@{init\+Server}}
+\index{init\+Server@{init\+Server}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{init\+Server}{initServer}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::init\+Server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_main_window_a9343e215240dbbabcc2a9f83b1a53807_a9343e215240dbbabcc2a9f83b1a53807}{}\label{class_main_window_a9343e215240dbbabcc2a9f83b1a53807_a9343e215240dbbabcc2a9f83b1a53807}
+\index{Main\+Window@{Main\+Window}!label\+Update@{label\+Update}}
+\index{label\+Update@{label\+Update}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{label\+Update()}{labelUpdate()}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::label\+Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_main_window_a09e3a622889962737a7f842b4f2a9693_a09e3a622889962737a7f842b4f2a9693}{}\label{class_main_window_a09e3a622889962737a7f842b4f2a9693_a09e3a622889962737a7f842b4f2a9693}
+\index{Main\+Window@{Main\+Window}!recv\+Message@{recv\+Message}}
+\index{recv\+Message@{recv\+Message}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{recv\+Message}{recvMessage}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::recv\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_main_window_a76637688e60dce665f72f661e1894412_a76637688e60dce665f72f661e1894412}{}\label{class_main_window_a76637688e60dce665f72f661e1894412_a76637688e60dce665f72f661e1894412}
+\index{Main\+Window@{Main\+Window}!require\+Reset@{require\+Reset}}
+\index{require\+Reset@{require\+Reset}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{require\+Reset}{requireReset}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::require\+Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_main_window_a939d1ea323f91e4a6e56e72ea3439803_a939d1ea323f91e4a6e56e72ea3439803}{}\label{class_main_window_a939d1ea323f91e4a6e56e72ea3439803_a939d1ea323f91e4a6e56e72ea3439803}
+\index{Main\+Window@{Main\+Window}!see\+Guest\+Window@{see\+Guest\+Window}}
+\index{see\+Guest\+Window@{see\+Guest\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{see\+Guest\+Window}{seeGuestWindow}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::see\+Guest\+Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_main_window_a0b946fa967217fdf44022c00294f03b8_a0b946fa967217fdf44022c00294f03b8}{}\label{class_main_window_a0b946fa967217fdf44022c00294f03b8_a0b946fa967217fdf44022c00294f03b8}
+\index{Main\+Window@{Main\+Window}!see\+Host\+Window@{see\+Host\+Window}}
+\index{see\+Host\+Window@{see\+Host\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{see\+Host\+Window}{seeHostWindow}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::see\+Host\+Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_main_window_af89f09b9a2c59e4903d26b2bd1355052_af89f09b9a2c59e4903d26b2bd1355052}{}\label{class_main_window_af89f09b9a2c59e4903d26b2bd1355052_af89f09b9a2c59e4903d26b2bd1355052}
+\index{Main\+Window@{Main\+Window}!send\+Message@{send\+Message}}
+\index{send\+Message@{send\+Message}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{send\+Message}{sendMessage}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::send\+Message (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_main_window_a6a0abf778996f6f2e3dc0d835d5f66ca_a6a0abf778996f6f2e3dc0d835d5f66ca}{}\label{class_main_window_a6a0abf778996f6f2e3dc0d835d5f66ca_a6a0abf778996f6f2e3dc0d835d5f66ca}
+
+
+\subsection{类成员变量说明}
+\index{Main\+Window@{Main\+Window}!gw@{gw}}
+\index{gw@{gw}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{gw}{gw}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf guest\+Window}$\ast$ Main\+Window\+::gw\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_main_window_a2ff9360aec66a22cda39d9b9b12b1a48_a2ff9360aec66a22cda39d9b9b12b1a48}{}\label{class_main_window_a2ff9360aec66a22cda39d9b9b12b1a48_a2ff9360aec66a22cda39d9b9b12b1a48}
+\index{Main\+Window@{Main\+Window}!hw@{hw}}
+\index{hw@{hw}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{hw}{hw}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf host\+Window}$\ast$ Main\+Window\+::hw\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_main_window_a4bd514a5ac9fb14a666d3e056f7d48ef_a4bd514a5ac9fb14a666d3e056f7d48ef}{}\label{class_main_window_a4bd514a5ac9fb14a666d3e056f7d48ef_a4bd514a5ac9fb14a666d3e056f7d48ef}
+\index{Main\+Window@{Main\+Window}!listen\+Socket@{listen\+Socket}}
+\index{listen\+Socket@{listen\+Socket}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{listen\+Socket}{listenSocket}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Tcp\+Server$\ast$ Main\+Window\+::listen\+Socket\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_main_window_a15e38a8a7fc8737287a4a182bc824534_a15e38a8a7fc8737287a4a182bc824534}{}\label{class_main_window_a15e38a8a7fc8737287a4a182bc824534_a15e38a8a7fc8737287a4a182bc824534}
+\index{Main\+Window@{Main\+Window}!read\+Write\+Socket@{read\+Write\+Socket}}
+\index{read\+Write\+Socket@{read\+Write\+Socket}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{read\+Write\+Socket}{readWriteSocket}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Tcp\+Socket$\ast$ Main\+Window\+::read\+Write\+Socket\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_main_window_a5189009165424634032c2f04a1dc46fe_a5189009165424634032c2f04a1dc46fe}{}\label{class_main_window_a5189009165424634032c2f04a1dc46fe_a5189009165424634032c2f04a1dc46fe}
+\index{Main\+Window@{Main\+Window}!ui@{ui}}
+\index{ui@{ui}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{ui}{ui}}]{\setlength{\rightskip}{0pt plus 5cm}Ui\+::\+Main\+Window$\ast$ Main\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_main_window_a35466a70ed47252a0191168126a352a5_a35466a70ed47252a0191168126a352a5}{}\label{class_main_window_a35466a70ed47252a0191168126a352a5_a35466a70ed47252a0191168126a352a5}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mainwindow_8h}{mainwindow.\+h}\end{DoxyCompactItemize}
